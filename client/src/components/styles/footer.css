@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+
+.footer {
+  background: radial-gradient(farthest-corner at 10% 2%, #ffffb3, #ffff66);
+  color: black;
+  position: fixed;
+  left: 0px;
+  width: 100%;
+  bottom: 0%;
+}
+
+.link {
+  margin: 15px;
+  padding: 10px 10px 10px 10px;
+}
