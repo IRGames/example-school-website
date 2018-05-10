@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 
-
 export default class Content extends Component {
   constructor(props){
     super(props);
@@ -8,7 +7,49 @@ export default class Content extends Component {
 
   render(){
     return(
-      <div>STUFF</div>
+      <div className = "page">
+        THIS <br />
+      IS <br />
+    THE <br />
+  HOMEPAGE <br />
+  THIS <br />
+IS <br />
+THE <br />
+HOMEPAGE <br />
+THIS <br />
+IS <br />
+THE <br />
+HOMEPAGE <br />
+THIS <br />
+IS <br />
+THE <br />
+HOMEPAGE <br />
+THIS <br />
+IS <br />
+THE <br />
+HOMEPAGE <br />
+THIS <br />
+IS <br />
+THE <br />
+HOMEPAGE <br />
+THIS <br />
+IS <br />
+THE <br />
+HOMEPAGE <br />
+THIS <br />
+IS <br />
+THE <br />
+HOMEPAGE <br />
+THIS <br />
+IS <br />
+THE <br />
+HOMEPAGE <br />
+THIS <br />
+IS <br />
+THE <br />
+HOMEPAGE <br />
+
+      </div>
     )
   }
 

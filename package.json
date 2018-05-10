@@ -37,6 +37,7 @@
     "concurrently": "^3.5.1",
     "dotenv": "^5.0.1",
     "express": "^4.16.3",
+    "hard-source-webpack-plugin": "^0.6.4",
     "material-ui": "^0.20.0",
     "react": "^16.3.2",
     "react-columns": "^1.2.0",

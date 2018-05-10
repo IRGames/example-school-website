@@ -12,7 +12,8 @@ var pages =
     {address: "/school-board", name: "School Board"},
     {address: "/student-parent-resources", name: "Student and Parent Resources"},
     {address: "/staff-resources", name: "Staff Resources"},
-    {address: "/employment", name: "Employment"}
+    {address: "/employment", name: "Employment"},
+    {address: "/", name: "Homepage"}
 ];
 
 //Create a raised button that links to each page

@@ -1,4 +1,9 @@
-hr {
-  size: 0.5%;
+.hr {
+  position: fixed;
+  z-index: 1;
+  size: 5px;
   color: gray;
+  border-width: 0.5;
+  border-color:'black';
+  margin:10;
 }

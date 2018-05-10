@@ -3,7 +3,6 @@ import IconMenu from 'material-ui/IconMenu';
 import IconButton from 'material-ui/IconButton';
 import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
 
-
 import { header } from '../styles/header.css';
 import links from './links.jsx'
 

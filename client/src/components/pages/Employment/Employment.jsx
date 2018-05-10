@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import { page } from "../../styles/pages.css";
 
 export default class Employment extends Component {
   constructor(props){
@@ -8,7 +8,7 @@ export default class Employment extends Component {
 
   render(){
     return(
-      <div>
+      <div className = "page">
         1 <br />
       2 <br />
     3 <br />
