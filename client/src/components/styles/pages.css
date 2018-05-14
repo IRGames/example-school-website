@@ -10,6 +10,6 @@
   left: 0px;
   z-index: -1;
   display: inline-block;
-  position: fixed;
+  position: relative;
   overflow: scroll;
 }

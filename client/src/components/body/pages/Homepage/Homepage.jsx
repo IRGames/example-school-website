@@ -7,7 +7,7 @@ export default class Content extends Component {
 
   render(){
     return(
-      <div className = "page">
+      <div>
         THIS <br />
       IS <br />
     THE <br />
@@ -17,6 +17,7 @@ IS <br />
 THE <br />
 HOMEPAGE <br />
 THIS <br />
+<hr />
 IS <br />
 THE <br />
 HOMEPAGE <br />

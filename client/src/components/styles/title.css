@@ -1,0 +1,8 @@
+.titleImage {
+  max-width: 40%;
+  max-height: 40%;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
