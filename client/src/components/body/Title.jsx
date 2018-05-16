@@ -3,9 +3,10 @@ import React from 'react';
 import {titleImage} from '../styles/title.css'
 
 const Title = () => (
-  <div>bbbb
-    <img className = 'titleImage' src =
-    'http://wiki.msad58.org/users/maliberti/weblog/b1348/images/6c088.JPG' />
+  <div className = 'title-container'>
+    <img className = 'title-image' src =
+    'https://s9.postimg.cc/bfkkx6mhb/logo.png' /><br />
+  <i>Empowering learners to invent their future</i>
   </div>
 );
 

@@ -1,8 +1,21 @@
-.titleImage {
-  max-width: 40%;
-  max-height: 40%;
-  display: inline-block;
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+
+.title-image {
+  top: 0px;
+  left: 0px;
+  height: 100% - 20px;
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 5px;
+}
+
+.title-container{
+  font-family: 'Oswald', sans-serif;
+  color: #04327c;
+  position: relative;
+  text-align: center;
+  height: 300px;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  margin: 10px;
 }

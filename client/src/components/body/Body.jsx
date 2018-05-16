@@ -14,18 +14,40 @@ import Header from "../header/Header.jsx"
 
 
 import { page } from "../styles/pages.css";
+import { body } from "../styles/body.css";
 
 export default class Body extends Component{
   constructor(props){
     super(props);
+
+    this.handleResize = this.handleResize.bind(this);
+
+    this.state = {
+      showMobile: false,
+    }
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', this.handleResize);
+    if( window.innerWidth < 700 ) {
+      this.setState({showMobile: true});
+    }
+  }
+
+  handleResize(){
+    if ( window.innerWidth < 700 ) {
+      this.setState({showMobile: true});
+    } else {
+      this.setState({showMobile: false});
+    }
   }
 
   render(){
     return (
       <Router>
-        <div className = "page">
+        <div className = "body">
           <Title />
-          <Header />
+          <Header showMobile = {this.state.showMobile}/>
           <Route exact = {true} path="/" component={Homepage} />
           <Route path="/calendars" component={Calendars} />
           <Route path="/our-schools" component={OurSchools} />
