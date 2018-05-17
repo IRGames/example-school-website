@@ -17,7 +17,7 @@ var pages =
 ];
 
 //Create a raised button that links to each page
-var links = [];
+export var links = [];
 for (var i = 0; i < pages.length; i++){
   links.push(
     <Link className = "link " to={pages[i].address}>
@@ -26,18 +26,37 @@ for (var i = 0; i < pages.length; i++){
   );
 }
 
+//oh god... look away
 export var buttons = [];
-for (var i = 0; i < pages.length; i++){
-
-  if ( i === 3 ) {
-    buttons.push(<br />);
-  }
-
-  buttons.push(
-    <Link to={pages[i].address}>
-      <div className = "button">{pages[i].name}</div>
+buttons.push(
+  <div>
+  <div>
+    <Link to={pages[0].address}>
+      <div className = "button">{pages[0].name}</div>
     </Link>
-  );
-}
-
-export default links;
+    <Link to={pages[1].address}>
+      <div className = "button">{pages[1].name}</div>
+    </Link>
+    <Link to={pages[2].address}>
+      <div className = "button">{pages[2].name}</div>
+    </Link>
+    <br />
+    <hr />
+  </div>
+  <div>
+    <Link to={pages[3].address}>
+      <div className = "button">{pages[3].name}</div>
+    </Link>
+    <Link to={pages[4].address}>
+      <div className = "button">{pages[4].name}</div>
+    </Link>
+    <Link to={pages[5].address}>
+      <div className = "button">{pages[5].name}</div>
+    </Link>
+    <Link to={pages[6].address}>
+      <div className = "button">{pages[6].name}</div>
+    </Link>
+    <hr />
+  </div>
+  </div>
+);

@@ -18,9 +18,9 @@ export default class Header extends Component{
 
   mobileRender(){
     return (
-      <div className = {this.state.headerMobile}>
+      <div className = {this.props.headerMobile}>
         <img src = "https://s9.postimg.cc/bfkkx6mhb/logo.png" className = "image"/>
-        <div className = "title">MSAD 58</div>
+        <div className = "header-title">MSAD 58</div>
         <IconMenu
           className = "icon"
           iconButtonElement={<IconButton><MoreVertIcon /></IconButton>}

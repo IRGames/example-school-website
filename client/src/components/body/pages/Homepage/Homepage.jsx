@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { page } from "../../../styles/pages.css";
 
 export default class Content extends Component {
   constructor(props){
@@ -7,7 +8,7 @@ export default class Content extends Component {
 
   render(){
     return(
-      <div>
+      <div className = "page">
         THIS <br />
       IS <br />
     THE <br />

@@ -16,28 +16,56 @@ import Header from "../header/Header.jsx"
 import { page } from "../styles/pages.css";
 import { body } from "../styles/body.css";
 
+var scroll = 0;
+
 export default class Body extends Component{
   constructor(props){
     super(props);
-
+    this.bodyRef = React.createRef();
     this.handleResize = this.handleResize.bind(this);
-
+    this.handleScroll = this.handleScroll.bind(this);
     this.state = {
       showMobile: false,
+      fixHeader: false,
+      headerMobile: 'header-mobile',
+      headerLandscape: 'header-landscape',
     }
   }
 
   componentDidMount() {
     window.addEventListener('resize', this.handleResize);
+    this.bodyRef.current.addEventListener('scroll', this.handleScroll);
     if( window.innerWidth < 700 ) {
       this.setState({showMobile: true});
     }
   }
 
+  //Logic so that state is not changed every scroll
+  //This is done to prevent constantly re-rendering
+  handleScroll(){
+    scroll = this.bodyRef.current.scrollTop
+
+    if( !this.state.fixHeader && scroll >= 356 ) {
+      this.setState({
+        fixHeader: true,
+        headerMobile: 'header-mobile-fixed',
+       });
+    }
+    if ( this.state.fixHeader && scroll < 356 ) {
+      this.setState({
+        fixHeader: false,
+        headerMobile: 'header-mobile',
+       });
+    }
+  }
+
+  //Logic so that state is not changed every scroll
+  //This is done to prevent constantly re-rendering
   handleResize(){
-    if ( window.innerWidth < 700 ) {
+    if ( !this.state.showMobile && window.innerWidth < 700 ) {
       this.setState({showMobile: true});
-    } else {
+    }
+    if ( this.state.showMobile && window.innerWidth > 700 ) {
       this.setState({showMobile: false});
     }
   }
@@ -45,9 +73,12 @@ export default class Body extends Component{
   render(){
     return (
       <Router>
-        <div className = "body">
+        <div className = "body" ref={this.bodyRef} >
           <Title />
-          <Header showMobile = {this.state.showMobile}/>
+          <Header
+            showMobile = {this.state.showMobile}
+            headerMobile = {this.state.headerMobile}
+            />
           <Route exact = {true} path="/" component={Homepage} />
           <Route path="/calendars" component={Calendars} />
           <Route path="/our-schools" component={OurSchools} />

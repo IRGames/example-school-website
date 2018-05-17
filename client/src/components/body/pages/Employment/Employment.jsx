@@ -8,7 +8,7 @@ export default class Employment extends Component {
 
   render(){
     return(
-      <div>
+      <div className = "page">
         1 <br />
       2 <br />
     3 <br />
