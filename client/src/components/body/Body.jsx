@@ -78,6 +78,7 @@ export default class Body extends Component{
           <Header
             showMobile = {this.state.showMobile}
             headerMobile = {this.state.headerMobile}
+            fixHeader = {this.state.fixHeader}
             />
           <Route exact = {true} path="/" component={Homepage} />
           <Route path="/calendars" component={Calendars} />

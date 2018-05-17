@@ -4,16 +4,11 @@ import IconButton from 'material-ui/IconButton';
 import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
 
 import '../styles/header.css';
-import {links, buttons} from './links.jsx'
+import {links, buttons, fixedButtons} from './links.jsx'
 
 export default class Header extends Component{
   constructor(props){
     super(props);
-
-    this.state = {
-      headerMobile: 'header-mobile',
-      headerLandscape: 'header-landscape',
-    };
   }
 
   mobileRender(){
@@ -32,11 +27,19 @@ export default class Header extends Component{
   }
 
   computerRender(){
-    return (
-      <div className = {this.state.headerLandscape}>
-        {buttons}
-      </div>
-    )
+    if( !this.props.fixHeader ){
+      return (
+        <div className = 'header-landscape'>
+          {buttons}
+        </div>
+      );
+    } else {
+      return (
+        <div className = 'header-landscape-fixed'>
+          {fixedButtons}
+        </div>
+      );
+    }
   }
 
   render(){
