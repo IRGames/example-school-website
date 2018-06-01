@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
-import { page } from "../../../styles/pages.css";
+import Title from '../../Title.jsx';
+import Header from '../../../header/Header.jsx';
+import "../../../styles/homepage.css";
+import "../../../styles/pages.css";
 
 export default class Content extends Component {
   constructor(props){
@@ -8,50 +11,79 @@ export default class Content extends Component {
 
   render(){
     return(
-      <div className = "page">
-        THIS <br />
-      IS <br />
+      <div>
+        <Title />
+        <Header
+          headerMobile = {this.props.headerMobile}
+          showMobile = {this.props.showMobile}
+          fixHeader = {this.props.fixHeader}
+          />
+        <div className = 'page'>
+            THIS <br />
+          IS <br />
+        THE <br />
+      HOMEPAGE <br />
+      THIS <br />
+    IS <br />
     THE <br />
-  HOMEPAGE <br />
-  THIS <br />
-IS <br />
-THE <br />
-HOMEPAGE <br />
-THIS <br />
-<hr />
-IS <br />
-THE <br />
-HOMEPAGE <br />
-THIS <br />
-IS <br />
-THE <br />
-HOMEPAGE <br />
-THIS <br />
-IS <br />
-THE <br />
-HOMEPAGE <br />
-THIS <br />
-IS <br />
-THE <br />
-HOMEPAGE <br />
-THIS <br />
-IS <br />
-THE <br />
-HOMEPAGE <br />
-THIS <br />
-IS <br />
-THE <br />
-HOMEPAGE <br />
-THIS <br />
-IS <br />
-THE <br />
-HOMEPAGE <br />
-THIS <br />
-IS <br />
-THE <br />
-HOMEPAGE <br />
+    HOMEPAGE <br />
+    THIS <br />
+    <hr />
+    IS <br />
+    THE <br />
+    HOMEPAGE <br />
+    THIS <br />
+    IS <br />
+    THE <br />
+    HOMEPAGE <br />
+    THIS <br />
+    IS <br />
+    THE <br />
+    HOMEPAGE <br />
+    THIS <br />
+    IS <br />
+    THE <br />
+    HOMEPAGE <br />
+    THIS <br />
+    IS <br />
+    THE <br />
+    HOMEPAGE <br />
+    THIS <br />
+    IS <br />
+    THE <br />
+    HOMEPAGE <br />
+    THIS <br />
+    IS <br />
+    THE <br />
+    HOMEPAGE <br />
+    THIS <br />
+    IS <br />
+    THE <br />
+    HOMEPAGE <br />    HOMEPAGE <br />
+        THIS <br />
+        IS <br />
+        THE <br />
+        HOMEPAGE <br />    HOMEPAGE <br />
+            THIS <br />
+            IS <br />
+            THE <br />
+            HOMEPAGE <br />    HOMEPAGE <br />
+                THIS <br />
+                IS <br />
+                THE <br />
+                HOMEPAGE <br />    HOMEPAGE <br />
+                    THIS <br />
+                    IS <br />
+                    THE <br />
+                    HOMEPAGE <br />    HOMEPAGE <br />
+                        THIS <br />
+                        IS <br />
+                        THE <br />
+                        HOMEPAGE <br />
 
+          </div>
       </div>
+
     )
   }
 

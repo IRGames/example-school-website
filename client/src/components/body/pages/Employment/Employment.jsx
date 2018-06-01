@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { page } from "../../../styles/pages.css";
+import Header from '../../../header/Header.jsx';
 
 export default class Employment extends Component {
   constructor(props){
@@ -8,7 +9,7 @@ export default class Employment extends Component {
 
   render(){
     return(
-      <div className = "page">
+      <div>
         1 <br />
       2 <br />
     3 <br />
@@ -16,6 +17,30 @@ export default class Employment extends Component {
 5 <br />
 6 <br />
 7 <br />
+7 <br />
+7 <br />
+7 <br />
+7 <br />
+7 <br />
+7 <br />
+v
+7 <br />
+7 <br />
+7 <br />
+7 <br />
+7 <br />
+7 <br />
+7 <br />
+7 <br />
+7 <br />
+7 <br />
+7 <br />
+7 <br />
+7 <br />
+7 <br />
+7 <br />
+7 <br />
+
 
       </div>
     )

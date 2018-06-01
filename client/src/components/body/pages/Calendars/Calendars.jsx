@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import { page } from "../../../styles/pages.css";
+import Header from '../../../header/Header.jsx';
+import "../../../styles/pages.css";
 
 export default class Content extends Component {
   constructor(props){
@@ -8,7 +10,8 @@ export default class Content extends Component {
 
   render(){
     return(
-      <div className = "page">
+      <div className = 'page'>
+
         Calendars <br/>
       Calendars <br/>
     Calendars <br/>

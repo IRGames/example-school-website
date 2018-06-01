@@ -1,15 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald");
 
 .page {
-  color: #1A3549;
-  margin-top: 3em;
-  margin-left: 0px;
-  padding: 0px;
-  width: 100%;
-  top: 0px;
-  left: 0px;
-  z-index: -1;
-  display: inline-block;
-  position: relative;
-  overflow: scroll;
+  color: #000000;
+  margin: 6em;
+  font-family: 'Oswald', sans-serif;
 }

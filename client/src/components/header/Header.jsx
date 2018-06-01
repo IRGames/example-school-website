@@ -14,8 +14,8 @@ export default class Header extends Component{
   mobileRender(){
     return (
       <div className = {this.props.headerMobile}>
-        <img src = "https://s9.postimg.cc/bfkkx6mhb/logo.png" className = "image"/>
-        <div className = "header-title">MSAD 58</div>
+        <img src = "../../../../resources/logo.png" className = "image"/>
+        <div className = "header-mobile-title">MSAD 58</div>
         <IconMenu
           className = "icon"
           iconButtonElement={<IconButton><MoreVertIcon /></IconButton>}
@@ -30,13 +30,22 @@ export default class Header extends Component{
     if( !this.props.fixHeader ){
       return (
         <div className = 'header-landscape'>
-          {buttons}
+          <div className = "button-grid">
+            <div></div>
+            {buttons}
+          </div>
         </div>
       );
     } else {
       return (
         <div className = 'header-landscape-fixed'>
-          {fixedButtons}
+          <div className = "button-grid">
+            <div className = "picture">
+              <img className = 'image' src =
+                '../../../../resources/logo.png' />
+            </div>
+            {fixedButtons}
+          </div>
         </div>
       );
     }

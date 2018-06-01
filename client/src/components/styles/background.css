@@ -5,7 +5,7 @@
   height: 100%;
   z-index: -2;
   position: absolute;
-  background-image: url("https://s9.postimg.cc/3lnnn6j5r/Screen_Shot_2018-05-10_at_1.26.25_PM.png");
+  background-image: url("../../../../resources/background.png");
   background-size: cover;
   filter: blur(5px);
 }

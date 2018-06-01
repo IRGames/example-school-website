@@ -1,23 +1,33 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald");
 
+.title{
+  align-self: left;
+}
+
 .title-image {
   top: 0px;
   left: 0px;
+  object-fit: cover;
   height: 260px;
   width: 280px;
   position: relative;
-  margin: 5px;
 }
 
 .title-container{
   font-family: 'Oswald', sans-serif;
-  color: #001d4f;
-  font-size: 40px;
-  text-align: center;
-  height: 330px;
+  color: #000000;
+  font-size: 5vw;
+  height: 330px - 1vw;
   width: 100%;
   top: 0px;
   left: 0px;
-  margin: 10px;
-  overflow: hidden;
+}
+
+.title-grid-container{
+  display: grid;
+  grid-template-columns: 40% 2% 58%;
+}
+
+.background1{
+  text-align: center;
 }

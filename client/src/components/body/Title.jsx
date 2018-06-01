@@ -1,12 +1,15 @@
 import React from 'react';
 
-import {titleImage} from '../styles/title.css'
+import '../styles/title.css'
 
 const Title = () => (
-  <div className = 'title-container'>
-    <img className = 'title-image' src =
-    'https://s9.postimg.cc/bfkkx6mhb/logo.png' /><br />
-  <i>Empowering learners to invent their future</i>
+  <div className = 'title-container title-grid-container'>
+    <div className = 'background1'>
+      <img className = 'title-image' src =
+        '../../../../resources/logo.png' />
+    </div>
+    <div></div>
+    <i className = "title">Empowering learners <br />to invent their future</i>
   </div>
 );
 
