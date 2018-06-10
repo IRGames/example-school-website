@@ -12,11 +12,15 @@ export default class Content extends Component {
   render(){
     return(
       <div>
-        <Title />
+        <Title
+          mobile = {this.props.showMobile}
+          headerMiddle = {this.props.headerMiddle}
+          />
         <Header
           headerMobile = {this.props.headerMobile}
           showMobile = {this.props.showMobile}
           fixHeader = {this.props.fixHeader}
+          headerMiddle = {this.props.headerMiddle}
           />
         <div className = 'page'>
             THIS <br />

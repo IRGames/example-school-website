@@ -10,6 +10,8 @@ import Employment from "./Employment/Employment.jsx";
 
 import Header from "../../header/Header.jsx";
 
+import "../../styles/pages.css"
+
 export default class Pages extends Component {
   constructor(props){
     super(props);
@@ -17,7 +19,7 @@ export default class Pages extends Component {
 
   render(){
     return(
-      <div>
+      <div className = "stuff">
         <Header
           headerMobile = {this.props.headerMobile}
           showMobile = {this.props.showMobile}

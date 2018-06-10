@@ -5,3 +5,13 @@
   margin: 6em;
   font-family: 'Oswald', sans-serif;
 }
+
+.stuff {
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+}
+
+* {
+  margin: 0;
+}

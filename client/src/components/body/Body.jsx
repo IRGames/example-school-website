@@ -25,6 +25,7 @@ export default class Body extends Component{
       fixHeader: false,
       headerMobile: 'header-mobile',
       headerLandscape: 'header-landscape',
+      headerMiddle: 'false',
     }
   }
 
@@ -33,21 +34,23 @@ export default class Body extends Component{
     this.bodyRef.current.addEventListener('scroll', this.handleScroll);
     if( window.innerWidth < 700 ) {
       this.setState({showMobile: true});
+    } else if ( window.innerWidth < 1350 ) {
+      this.setState({headerMiddle: true});
     }
   }
 
   //Logic so that state is not changed every scroll
   //This is done to prevent constantly re-rendering
   handleScroll(){
-    scroll = this.bodyRef.current.scrollTop
+    scroll = this.bodyRef.current.scrollTop;
 
-    if( !this.state.fixHeader && scroll >= 330 ) {
+    if( !this.state.fixHeader && scroll >= 418 ) {
       this.setState({
         fixHeader: true,
         headerMobile: 'header-mobile-fixed',
        });
     }
-    if ( this.state.fixHeader && scroll < 330 ) {
+    if ( this.state.fixHeader && scroll < 418 ) {
       this.setState({
         fixHeader: false,
         headerMobile: 'header-mobile',
@@ -64,6 +67,14 @@ export default class Body extends Component{
     if ( this.state.showMobile && window.innerWidth > 800 ) {
       this.setState({showMobile: false});
     }
+    if(window.innerWidth > 800){
+      if ( !this.state.headerMiddle && window.innerWidth < 1350){
+        this.setState({headerMiddle: true});
+      }
+      if( this.state.headerMiddle && window.innerWidth > 1350){
+        this.setState({headerMiddle: false});
+      }
+    }
   }
 
   render(){
@@ -75,6 +86,7 @@ export default class Body extends Component{
                 showMobile = {this.state.showMobile}
                 headerMobile = {this.state.headerMobile}
                 fixHeader = {this.state.fixHeader}
+                headerMiddle = {this.state.headerMiddle}
                 />)} />
           <Route path="/pages/" render = {() => (
               <Pages

@@ -1,10 +1,53 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald");
 
-.title{
-  align-self: left;
+.title-landscape {
+  align-self: center;
+  justify-self: center;
+  font-family: 'Oswald', sans-serif;
+  color: #000000;
+  font-size: 88px;
 }
 
-.title-image {
+.title{
+  align-self: center;
+  justify-self: center;
+}
+
+.title-mobile{
+  top: 0;
+  left: 0;
+  margin: 0;
+  text-align: center;
+  font-size:  30px;
+  font-family: 'Oswald', sans-serif;
+  color: #000000;
+}
+
+.title-middle {
+  align-self: center;
+  justify-self: center;
+  font-family: 'Oswald', sans-serif;
+  color: #000000;
+  font-size: 70px;
+}
+
+.title-mobile {
+  align-self: center;
+  justify-self: center;
+}
+
+.title-image-landscape {
+  top: 0px;
+  left: 0px;
+  object-fit: cover;
+  height: 416px;
+  width: 448px;
+  position: relative;
+  align-self: center;
+  justify-self: center;
+}
+
+.title-image-middle {
   top: 0px;
   left: 0px;
   object-fit: cover;
@@ -13,21 +56,13 @@
   position: relative;
 }
 
-.title-container{
-  font-family: 'Oswald', sans-serif;
-  color: #000000;
-  font-size: 5vw;
-  height: 330px - 1vw;
-  width: 100%;
-  top: 0px;
-  left: 0px;
+.title-image-mobile {
+  height: 330px;
+  text-align: center;
 }
 
 .title-grid-container{
   display: grid;
-  grid-template-columns: 40% 2% 58%;
-}
-
-.background1{
-  text-align: center;
+  grid-template-columns: 40% 10% 50%;
+  grid-template-rows:  448px;
 }

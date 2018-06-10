@@ -2,6 +2,9 @@ import React, {Component} from 'react';
 import IconMenu from 'material-ui/IconMenu';
 import IconButton from 'material-ui/IconButton';
 import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
+import HeaderMobile from './HeaderMobile.jsx';
+import HeaderMiddle from './HeaderMiddle.jsx';
+import HeaderLandscape from './HeaderLandscape.jsx';
 
 import '../styles/header.css';
 import {links, buttons, fixedButtons} from './links.jsx'
@@ -11,51 +14,13 @@ export default class Header extends Component{
     super(props);
   }
 
-  mobileRender(){
-    return (
-      <div className = {this.props.headerMobile}>
-        <img src = "../../../../resources/logo.png" className = "image"/>
-        <div className = "header-mobile-title">MSAD 58</div>
-        <IconMenu
-          className = "icon"
-          iconButtonElement={<IconButton><MoreVertIcon /></IconButton>}
-        >
-          {links}
-        </IconMenu>
-    </div>
-    );
-  }
-
-  computerRender(){
-    if( !this.props.fixHeader ){
-      return (
-        <div className = 'header-landscape'>
-          <div className = "button-grid">
-            <div></div>
-            {buttons}
-          </div>
-        </div>
-      );
-    } else {
-      return (
-        <div className = 'header-landscape-fixed'>
-          <div className = "button-grid">
-            <div className = "picture">
-              <img className = 'image' src =
-                '../../../../resources/logo.png' />
-            </div>
-            {fixedButtons}
-          </div>
-        </div>
-      );
-    }
-  }
-
   render(){
     if ( this.props.showMobile ) {
-      return this.mobileRender();
+      return <HeaderMobile headerMobile = {this.props.headerMobile}/>
+    } else if ( this.props.headerMiddle ) {
+      return <HeaderMiddle fixHeader = {this.props.fixHeader}/>
     } else {
-      return this.computerRender();
+      return <HeaderLandscape fixHeader = {this.props.fixHeader}/>
     }
   }
 }

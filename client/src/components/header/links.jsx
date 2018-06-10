@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import RaisedButton from 'material-ui/RaisedButton';
 import MenuItem from 'material-ui/MenuItem';
 
-import { link } from '../styles/header.css';
+import '../styles/header.css';
 
 
 export var pages =
@@ -11,7 +11,7 @@ export var pages =
   {address: "/pages/calendars", name: "Calendars"},
   {address: "/pages/our-schools", name: "Our Schools"},
   {address: "/pages/school-board", name: "School Board"},
-  {address: "/pages/student-parent-resources", name: "Parents/Students"},
+  {address: "/pages/student-parent-resources", name: "Parents / Students"},
   {address: "/pages/staff-resources", name: "Staff Resources"},
   {address: "/pages/employment", name: "Employment"},
   {address: "/", name: "Homepage"}
@@ -31,7 +31,7 @@ for (var i = 0; i < pages.length; i++){
 export var buttons = [];
 for (var i = 0; i < pages.length; i++){
   buttons.push(
-    <div>
+    <div className = "button-div">
       <Link to = {pages[i].address}>
         <div className = "button">{pages[i].name}</div>
       </Link>

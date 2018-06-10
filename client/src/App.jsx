@@ -7,7 +7,7 @@ import Footer from "./components/footer/Footer.jsx";
 import Background from "./components/background/Background.jsx";
 import Body from "./components/body/Body.jsx";
 
-import { page } from "./components/styles/pages.css";
+import "./components/styles/pages.css";
 
 export default class App extends Component{
   constructor(props){
