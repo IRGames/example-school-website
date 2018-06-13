@@ -23,14 +23,18 @@ export default class Header extends Component{
       );
     } else {
       return (
-        <div className = 'header-landscape-fixed'>
-          <div className = "button-grid-fixed">
-            <div className = "picture">
-              <img className = 'image' src =
-                '../../../../resources/logo.png' />
+        <div>
+          <div className = 'header-landscape-fixed'>
+            <div className = "button-grid-fixed">
+              <div className = "picture">
+                <img className = 'image' src =
+                  '../../../../resources/logo.png' />
+              </div>
+              {fixedButtons}
             </div>
-            {fixedButtons}
           </div>
+          <div className = 'filler'></div>
+          <div className = 'filler'></div>
         </div>
       );
     }

@@ -2,10 +2,9 @@ import React, {Component} from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Pages from "./pages/Pages.jsx";
-
-import Title from './Title.jsx';
 import Header from "../header/Header.jsx";
 import Homepage from "./pages/Homepage/Homepage.jsx";
+import Admin from '../admin/Admin.jsx';
 
 import {pages} from "../header/links.jsx";
 
@@ -25,7 +24,7 @@ export default class Body extends Component{
       fixHeader: false,
       headerMobile: 'header-mobile',
       headerLandscape: 'header-landscape',
-      headerMiddle: 'false',
+      headerMiddle: false,
     }
   }
 
@@ -44,13 +43,13 @@ export default class Body extends Component{
   handleScroll(){
     scroll = this.bodyRef.current.scrollTop;
 
-    if( !this.state.fixHeader && scroll >= 418 ) {
+    if( !this.state.fixHeader && scroll >= 424 ) {
       this.setState({
         fixHeader: true,
         headerMobile: 'header-mobile-fixed',
        });
     }
-    if ( this.state.fixHeader && scroll < 418 ) {
+    if ( this.state.fixHeader && scroll < 424 ) {
       this.setState({
         fixHeader: false,
         headerMobile: 'header-mobile',
@@ -93,21 +92,10 @@ export default class Body extends Component{
                 showMobile = {this.state.showMobile}
                 headerMobile = {this.state.headerMobile}
                 />)} />
+              <Route path="/admin/" component = {Admin} />
         </div>
       </ Router>
     );
   }
 
 }
-
-/*
-
-<Route exact = {true} path="/" render = {() => (<Homepage />) } />
-<Route path="/calendars" render = {() => (<Calendars />) } />
-<Route path="/our-schools" render = {() => (<OurSchools />) } />
-<Route path="/school-board" render = {() => (<SchoolBoard />) } />
-<Route path="/student-parent-resources" render = {() => (<StudentParentResources />) } />
-<Route path="/staff-resources" render = {() => (<StaffResources />) } />
-<Route path="/employment" render = {() => (<Employment />) }/>
-</div>
-*/

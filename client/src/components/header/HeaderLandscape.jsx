@@ -14,7 +14,7 @@ export default class Header extends Component{
   render(){
     if( !this.props.fixHeader ){
       return (
-        <div className = 'header-landscape'>
+        <div>
           <div className = "button-grid-landscape">
             {buttons}
           </div>
@@ -22,14 +22,17 @@ export default class Header extends Component{
       );
     } else {
       return (
-        <div className = 'header-landscape-fixed'>
-          <div className = "button-grid-fixed">
-            <div className = "picture">
-              <img className = 'image' src =
-                '../../../../resources/logo.png' />
+        <div>
+          <div className = 'header-landscape-fixed'>
+            <div className = "button-grid-fixed">
+              <div className = "picture">
+                <img className = 'image' src =
+                  '../../../../resources/logo.png' />
+              </div>
+              {fixedButtons}
             </div>
-            {fixedButtons}
           </div>
+          <div className = 'filler'></div>
         </div>
       );
     }

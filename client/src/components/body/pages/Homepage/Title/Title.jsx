@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import TitleLandscape from './TitleLandscape.jsx';
 import TitleMiddle from './TitleMiddle.jsx';
 import TitleMobile from './TitleMobile.jsx';
-import '../styles/title.css';
+import '../../../../styles/title.css';
 
 export default class Title extends Component{
   constructor(props){

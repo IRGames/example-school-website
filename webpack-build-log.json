@@ -1,0 +1,4 @@
+{
+  "build": "webpack",
+  "start": "webpack-dev-server"
+}
