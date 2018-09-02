@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Editor from 'react-pell';
 
-import '../../../../styles/editannouncement.css';
+//import '../../../../styles/editannouncement.css';
 
 export default class EditAnnouncement extends Component{
   constructor(props){

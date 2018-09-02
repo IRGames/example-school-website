@@ -16,14 +16,6 @@ export default class Content extends Component {
     };
   }
 
-  toggleAddAnnouncement() {
-    console.log('touched');
-    console.log(fetch('/butt'));
-    this.setState({
-      showPopup: !this.state.showPopup
-    });
-  }
-
   render(){
     return(
       <div>
@@ -46,11 +38,11 @@ export default class Content extends Component {
           />
 
         <div className = 'edit-announcement-link'>
-          <a href='/admin/'>
+          <Link to='/admin/'>
             <div> HEY HEY HEY</div>
-          </a>
+          </Link>
 
-          <button onClick = {this.toggleAddAnnouncement.bind(this)}>Touch me</button>
+
         </div>
       </div>
       {this.state.showPopup ? <EditAnnouncement />: null}
@@ -59,3 +51,17 @@ export default class Content extends Component {
 }
 
 }
+
+
+//  <button onClick = {this.toggleAddAnnouncement.bind(this)}>Touch me</button>
+
+/*
+
+toggleAddAnnouncement() {
+  console.log('touched');
+  this.setState({
+    showPopup: !this.state.showPopup
+  });
+}
+
+*/

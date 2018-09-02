@@ -39,7 +39,7 @@ export default class Body extends Component{
   }
 
   //Logic so that state is not changed every scroll
-  //This is done to prevent constantly re-rendering
+  //This is done to prevent constant re-rendering
   handleScroll(){
     scroll = this.bodyRef.current.scrollTop;
 
@@ -58,7 +58,7 @@ export default class Body extends Component{
   }
 
   //Logic so that state is not changed every scroll
-  //This is done to prevent constantly re-rendering
+  //This is done to prevent constant re-rendering
   handleResize(){
     if ( !this.state.showMobile && window.innerWidth < 800 ) {
       this.setState({showMobile: true});

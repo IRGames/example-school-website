@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 var HardSourceWebpackPlugin = require('hard-source-webpack-plugin');
+var webpack = require('webpack');
 
 module.exports = {
 	entry: './client/index.js',
@@ -36,7 +37,13 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: 'client/index.html',
 		}),
-		new HardSourceWebpackPlugin()
+		new HardSourceWebpackPlugin(),
+		new webpack.DefinePlugin({
+			'process.env': {
+				PASSWORD: JSON.stringify(process.env.PASSWORD),
+				BUTTS:  JSON.stringify(process.env.BUTTS)
+			}
+		})
 	],
 	devtool: 'inline-source-map'
 };
