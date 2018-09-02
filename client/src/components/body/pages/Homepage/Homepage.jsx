@@ -5,8 +5,8 @@ import Announcement from './Announcements/Announcement.jsx';
 import EditAnnouncement from './Announcements/EditAnnouncement.jsx';
 import { Link } from 'react-router-dom';
 
-import "../../../styles/homepage.css";
-import "../../../styles/pages.css";
+import "./styles/homepage.css";
+import "./styles/pages.css";
 
 export default class Content extends Component {
   constructor(props){

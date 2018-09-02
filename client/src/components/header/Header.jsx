@@ -6,7 +6,7 @@ import HeaderMobile from './HeaderMobile.jsx';
 import HeaderMiddle from './HeaderMiddle.jsx';
 import HeaderLandscape from './HeaderLandscape.jsx';
 
-import '../styles/header.css';
+import './styles/header.css';
 import {links, buttons, fixedButtons} from './links.jsx'
 
 export default class Header extends Component{

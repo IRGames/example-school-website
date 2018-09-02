@@ -3,7 +3,7 @@ import RaisedButton from 'material-ui/RaisedButton';
 import GoogleLogin from 'react-google-login';
 import EditAnnouncement from './create-announcement-form/EditAnnouncement.jsx';
 
-import '../styles/admin.css';
+import {cssAdmin} from './styles/admin.js';
 
 export default class Admin extends Component {
   constructor(props){
@@ -56,12 +56,12 @@ export default class Admin extends Component {
     console.log(process.env.BUTTS);
     if(this.state.showPopup){
       return(
-        <div className = 'login-container'>
-          <div className = 'login-options'>
+        <div className = 'login_container'>
+          <div className = 'login_options'>
             Please sign in
             <br/>
               <GoogleLogin
-                clientId="819487307606-9kum6qubq5p0h764vrtcsri4d35f79df.apps.googleusercontent.com"
+                clientId= {process.env.CLIENT_ID}
                 buttonText="Login"
                 onSuccess={this.toggleAddAnnouncement}
                 onFailure={this.responseGoogle}

@@ -4,7 +4,7 @@ import IconButton from 'material-ui/IconButton';
 import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
 import HeaderMobile from './HeaderMobile.jsx';
 
-import '../styles/header.css';
+import './styles/header.css';
 import {links, buttons, fixedButtons} from './links.jsx'
 
 export default class Header extends Component{

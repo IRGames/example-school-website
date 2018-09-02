@@ -5,7 +5,7 @@
   height: 100%;
   z-index: -2;
   position: absolute;
-  background-image: url("../../../../resources/background.png");
+  background-image: url("../resources/background.png");
   background-size: cover;
   filter: blur(5px);
 }

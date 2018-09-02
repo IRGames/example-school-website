@@ -3,7 +3,7 @@ import IconMenu from 'material-ui/IconMenu';
 import IconButton from 'material-ui/IconButton';
 import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
 
-import {footer} from '../styles/footer.css';
+import {footer} from './styles/footer.css';
 
 const Footer = () => (
     <div className = "footer">

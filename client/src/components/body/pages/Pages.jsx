@@ -10,7 +10,7 @@ import Employment from "./Employment/Employment.jsx";
 
 import Header from "../../header/Header.jsx";
 
-import "../../styles/pages.css"
+import "./styles/pages.css"
 
 export default class Pages extends Component {
   constructor(props){

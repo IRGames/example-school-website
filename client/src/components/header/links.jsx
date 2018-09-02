@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import RaisedButton from 'material-ui/RaisedButton';
 import MenuItem from 'material-ui/MenuItem';
 
-import '../styles/header.css';
+import './styles/header.css';
 
 
 export var pages =

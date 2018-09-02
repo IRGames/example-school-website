@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import '../../../../styles/announcement.css';
+import './styles/announcement.css';
 
 export default class Announcement extends Component{
   constructor(props){

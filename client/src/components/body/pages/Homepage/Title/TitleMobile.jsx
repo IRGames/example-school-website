@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import '../../../../styles/title.css';
+import './styles/title.css';
 
 const TitleMobile= () => {
   return(

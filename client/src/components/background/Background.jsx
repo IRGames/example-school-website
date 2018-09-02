@@ -1,10 +1,10 @@
 import React from 'react';
 
-import {background} from '../styles/background.css';
+import './styles/background.css';
 
 const Background = () => (
     <div className = "background">
-      
+
     </div>
 );
 

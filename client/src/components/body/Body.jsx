@@ -8,8 +8,8 @@ import Admin from '../admin/Admin.jsx';
 
 import {pages} from "../header/links.jsx";
 
-import "../styles/pages.css";
-import "../styles/body.css";
+import "./styles/pages.css";
+import "./styles/body.css";
 
 var scroll = 0;
 
